@@ -1,14 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #006400; /* Dark Green */
+    background-color: #008000; /* Green */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -27,23 +28,43 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #006400; /* Darker Green */
+    border-radius: 5px;
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
+section h1, section h2 {
+    color: #008000; /* Green */
+}
+
+section p {
+    color: #555;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
 footer {
-    background-color: #006400; /* Dark Green */
+    background-color: #008000; /* Green */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
 .banner img, .product img, .solution img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -54,6 +75,7 @@ form {
 
 form label {
     margin-top: 10px;
+    color: #008000; /* Green */
 }
 
 form input, form textarea {
@@ -61,13 +83,22 @@ form input, form textarea {
     padding: 10px;
     width: 80%;
     max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 form button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #006400; /* Dark Green */
+    background-color: #008000; /* Green */
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #006400; /* Darker Green */
 }
