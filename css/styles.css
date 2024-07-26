@@ -1,49 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinguaAid - Healthcare AI Startup</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="LinguaAid Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="support.html">Support & Services</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="news.html">News & Updates</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="overview">
-            <h1>Welcome to LinguaAid</h1>
-            <p>We are dedicated to improving the lives of aphasia patients through innovative AI technology.</p>
-        </section>
-        <section class="core-technology">
-            <h2>Core Technology</h2>
-            <p>Our self-developed AI chips offer advanced capabilities in assisting aphasia treatment and communication.</p>
-        </section>
-        <section class="product-showcase">
-            <h2>Product Showcase</h2>
-            <img src="images/product-showcase.jpg" alt="Portable Device">
-            <p>Explore the features and benefits of our portable device designed for aphasia patients.</p>
-        </section>
-        <section class="testimonials">
-            <h2>User Testimonials</h2>
-            <p>Read feedback from aphasia patients and their families who have benefited from our technology.</p>
-        </section>
-    </main>
-    <footer>
-        <p>LinguaAid | Company Address | Contact Information | Social Media Links</p>
-    </footer>
-</body>
-</html>
+/* General styles for body and text */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header styles including logo and navigation */
+header {
+    background: linear-gradient(135deg, #76c7c0, #a0d9b4); /* Summer green */
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #76c7c0;
+    transform: scale(1.1);
+}
+
+/* Section styles for main content */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    color: #76c7c0;
+}
+
+section p {
+    color: #555;
+    line-height: 1.8;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(135deg, #76c7c0, #a0d9b4); /* Summer green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Image styles for banners and product images */
+.banner img, .product img, .solution img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.banner img:hover, .product img:hover, .solution img:hover {
+    transform: scale(1.05);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form label {
+    margin-top: 10px;
+    color: #76c7c0;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid #76c7c0;
+    box-shadow: 0 0 5px rgba(118, 199, 192, 0.5);
+}
+
+form button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #76c7c0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #a0d9b4;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for sections */
+.overview, .core-technology, .product-showcase, .testimonials, .product-overview, .key-features, .usage-guide, .medical-solutions, .home-solutions, .technical-support, .service-network, .download-center, .team-introduction, .partners, .news, .contact-information, .online-inquiry {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.overview:hover, .core-technology:hover, .product-showcase:hover, .testimonials:hover, .product-overview:hover, .key-features:hover, .usage-guide:hover, .medical-solutions:hover, .home-solutions:hover, .technical-support:hover, .service-network:hover, .download-center:hover, .team-introduction:hover, .partners:hover, .news:hover, .contact-information:hover, .online-inquiry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Advanced hover effects */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #76c7c0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
