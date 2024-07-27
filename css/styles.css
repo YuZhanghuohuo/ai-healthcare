@@ -91,30 +91,27 @@ section p {
 
 .team-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
 
 .team-member {
-    display: flex;
     background: white;
     border-radius: 15px;
     padding: 30px;
-    width: 800px; /* Consistent width */
+    width: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: left;
-    align-items: center;
 }
 
 .team-member img {
     border-radius: 50%;
-    width: 210px; /* Increased size */
-    height: 230px; /* Increased size */
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 .team-member:hover {
@@ -124,22 +121,19 @@ section p {
 
 .team-member h3 {
     color: #006400;
-    margin: 0 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 
 .team-member p {
     color: #555;
     margin: 5px 0;
-    text-align: justify; /* Justified text */
-}
-
-.team-member .member-info {
-    max-width: 500px; /* Ensure text doesn't overflow */
+    text-align: justify;
 }
 
 .team-member p strong {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 /* Footer styles */
@@ -197,4 +191,12 @@ form input, form textarea {
 
 form input:focus, form textarea:focus {
     border: 1px solid #006400;
-    box-shadow: 0 0 5px rgba(0, 
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
+}
+
+form button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #006400;
+    color: white;
+    border:
