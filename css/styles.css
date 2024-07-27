@@ -108,8 +108,8 @@ section p {
 
 .team-member img {
     border-radius: 50%;
-    width: 260px; /* Increased size */
-    height: 260px; /* Increased size */
+    width: 180px; /* Increased size */
+    height: 230px; /* Increased size */
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
