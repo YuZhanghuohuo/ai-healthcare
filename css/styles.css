@@ -100,7 +100,7 @@ section p {
     background: white;
     border-radius: 15px;
     padding: 30px;
-    width: 300px; /* Increased width */
+    width: 350px; /* Increased width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
@@ -108,8 +108,8 @@ section p {
 
 .team-member img {
     border-radius: 50%;
-    width: 150px; /* Increased size */
-    height: 150px; /* Increased size */
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -202,4 +202,4 @@ form button {
 form button:hover {
     background-color: #228b22;
     transform: translateY(-5px);
-    box-shadow
+    box-shadow: 0 6
