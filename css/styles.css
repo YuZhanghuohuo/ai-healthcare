@@ -91,6 +91,7 @@ section p {
 
 .team-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
@@ -99,16 +100,16 @@ section p {
     background: white;
     border-radius: 15px;
     padding: 30px;
-    width: 350px;
+    width: 350px; /* Increased width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    text-align: left;
+    text-align: center;
 }
 
 .team-member img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 210px; /* Increased size */
+    height: 230px; /* Increased size */
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -127,13 +128,12 @@ section p {
 .team-member p {
     color: #555;
     margin: 5px 0;
-    text-align: justify;
+    text-align: justify; /* Justified text */
 }
 
 .team-member p strong {
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 /* Footer styles */
@@ -199,4 +199,7 @@ form button {
     padding: 15px 30px;
     background-color: #006400;
     color: white;
-    border:
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform
