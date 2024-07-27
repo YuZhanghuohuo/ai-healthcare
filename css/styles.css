@@ -84,6 +84,12 @@ section p {
 
 /* Team section */
 .team {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f4f8;
+}
+
+.team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -94,7 +100,7 @@ section p {
     background: white;
     border-radius: 15px;
     padding: 20px;
-    width: 200px;
+    width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
@@ -102,11 +108,11 @@ section p {
 
 .team-member img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .team-member:hover {
@@ -198,6 +204,3 @@ form button:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* Additional styling for sections */
-.overview, .core-technology, .product-showcase, .testimonials, .product-over
