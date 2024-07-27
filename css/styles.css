@@ -9,7 +9,7 @@ body {
 
 /* Header styles including logo and navigation */
 header {
-    background: linear-gradient(135deg, #2e8b57, #66cdaa); /* Sea green */
+    background: linear-gradient(135deg, #006400, #228b22); /* Dark green */
     color: white;
     padding: 20px 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -49,7 +49,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
-    color: #2e8b57;
+    color: #006400;
     transform: scale(1.1);
 }
 
@@ -70,7 +70,7 @@ section:hover {
 }
 
 section h1, section h2 {
-    color: #2e8b57;
+    color: #006400;
 }
 
 section p {
@@ -84,7 +84,7 @@ section p {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(135deg, #2e8b57, #66cdaa); /* Sea green */
+    background: linear-gradient(135deg, #006400, #228b22); /* Dark green */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -120,7 +120,7 @@ form {
 
 form label {
     margin-top: 10px;
-    color: #2e8b57;
+    color: #006400;
     font-weight: bold;
 }
 
@@ -136,14 +136,14 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    border: 1px solid #2e8b57;
-    box-shadow: 0 0 5px rgba(46, 139, 87, 0.5);
+    border: 1px solid #006400;
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 
 form button {
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #2e8b57;
+    background-color: #006400;
     color: white;
     border: none;
     border-radius: 30px;
@@ -152,7 +152,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #66cdaa;
+    background-color: #228b22;
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -195,7 +195,7 @@ nav ul li a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #2e8b57;
+    background-color: #006400;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -203,5 +203,5 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
     visibility: visible;
-    transform: scaleX
+    transform: scaleX(1);
 }
