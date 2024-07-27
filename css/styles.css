@@ -108,7 +108,7 @@ section p {
 
 .team-member img {
     border-radius: 50%;
-    width: 200px; /* Increased size */
+    width: 210px; /* Increased size */
     height: 230px; /* Increased size */
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -128,6 +128,7 @@ section p {
 .team-member p {
     color: #555;
     margin: 5px 0;
+    text-align: justify; /* Justified text */
 }
 
 /* Footer styles */
@@ -201,5 +202,5 @@ form button {
 
 form button:hover {
     background-color: #228b22;
-    transform: translateY(-5px);
-    box-shadow: 0 6
+    transform:
+}
