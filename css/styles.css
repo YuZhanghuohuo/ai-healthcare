@@ -136,6 +136,66 @@ section p {
     margin-bottom: 10px;
     text-align: center;
 }
+/* Styles for product overview, key features, and usage guide sections */
+.product-overview, .key-features, .usage-guide {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-overview:hover, .key-features:hover, .usage-guide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-overview h1, .key-features h2, .usage-guide h2 {
+    color: #006400;
+}
+
+.product-overview p, .usage-guide p {
+    color: #555;
+    line-height: 1.8;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.key-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.key-features ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.usage-guide ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.usage-guide ol li {
+    margin: 10px 0;
+}
+
+.product-overview img, .usage-guide video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.product-overview img:hover, .usage-guide video:hover {
+    transform: scale(1.05);
+}
 
 /* Footer styles */
 footer {
